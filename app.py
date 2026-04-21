@@ -4,6 +4,13 @@ import plotly.express as px
 
 st.set_page_config(layout="wide")
 
+# Bloco do README inserido no corpo principal
+try:
+    with open("README.md", "r", encoding="utf-8") as f:
+        st.markdown(f.read())
+except FileNotFoundError:
+    pass
+
 df_reviews = pd.read_csv("datasets/customer reviews.csv")
 df_top100_books = pd.read_csv("datasets/Top-100 Trending Books.csv")
 
@@ -20,4 +27,5 @@ fig2 = px.histogram(df_books["book price"])
 col1, col2 = st.columns(2)
 col1.plotly_chart(fig)
 col2.plotly_chart(fig2)
+
 # Escreva o seu código aqui :-)
