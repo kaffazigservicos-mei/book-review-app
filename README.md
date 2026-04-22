@@ -5,7 +5,7 @@ Foi criado para testar conhecimentos iniciais do Python
 
 ## 🚀 Como acessar o projeto
 Você pode visualizar o app online através deste link: 
-(https://book-review-app-seu-usuario.streamlit.app/)
+[https://book-review-app-seu-usuario.streamlit.app/](https://book-review-app-seu-usuario.streamlit.app/)
 
 ## 🛠️ Tecnologias Utilizadas
 - **Python**: Linguagem principal.
